@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    body {
+        background-image: url(/static/images/img10.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        
+
+    }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="{% url 'add_list' %}"> 
+        {% csrf_token %}
+        {{ forms.as_p }}
+        <button type="submit">addlist</button> 
+        </form>  
+</body>
+</html>

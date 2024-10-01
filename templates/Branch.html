@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branch</title>
+</head>
+<body>
+    <h1 style="text-align:center">BRANCH</h1>
+    {% for Branch in data %}
+    <ul>
+        <li>courierid:{{ Branch.courierid }}</li>
+        <li>name:{{ Branch.name }}</li>
+        <li>pincode:{{ Branch.pincode }}</li>
+        <li>district:{{ Branch.district }}</li>
+        <li>state:{{ Branch.state }}</li>
+        <li>country:{{ Branch.country }}</li>
+    </ul>
+    {% endfor %} 
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center">LIST</h1>
+    {%  for List in data %}
+    <ul>
+        <li>receivername:{{ List.receivername }}</li>
+        <li>sendername:{{ List.sendername }}</li>
+        <li>pickupaddress:{{ List.pickupaddress }} </li>
+        <li>deliveryaddress:{{ List.deliveryaddress }}</li>
+        <li>weight:{{ List.weight }}</li>
+        <li>cost:{{ List.cost }}</li>
+    </ul>  
+    {% endfor %}
+</body>
+</html>

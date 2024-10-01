@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courier Management System</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+    }
+
+    header {
+      background-color: black;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: orange;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+      margin: 0 10px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .heading {
+      color:#fff;
+    }
+  </style>
+</head>
+<body style="background-image: url('/static/images/img.png'); background-size: 108%; background-repeat: no-repeat;">
+
+  
+  <nav>
+    
+    <a href="http://127.0.0.1:8000/login">LOGIN</a>
+    <a href="http://127.0.0.1:8000/">REGISTER</a>
+    
+    <a href="http://127.0.0.1:8000/add_branch/">BRANCH</a>
+    <a href="http://127.0.0.1:8000/add_list/">LIST</a>
+    
+    <!-- Add more links or functionalities as needed -->
+  </nav>
+  <div class="heading">
+  <p><h1><center>COURIER MANAGEMENT SYSTEM</h1></center></p>
+</div>
+</body>
+</html>
